@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Quiz</h1>
+        <div id="quiz">
+            <h2 id="question">Loading question...</h2>
+            <div id="choices"></div>
+            <button id="submit" style="display: none;">Submit</button>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p>Your score: <span id="score"></span></p>
+        </div>
+    </div>
+
+    <!-- Firebase App and Firestore SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+    <!-- Your script file -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
